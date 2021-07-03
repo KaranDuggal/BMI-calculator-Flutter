@@ -46,8 +46,14 @@ class _HomeScreenState extends State<HomeScreen> {
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: 'Height',
+                        labelText:'Height (mm)',
+                        labelStyle: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.white.withOpacity(.8)
+                        ),
                         hintStyle: TextStyle(
-                          fontSize: 42,
+                          fontSize: 40,
                           fontWeight: FontWeight.w300,
                           color: Colors.white.withOpacity(.8)
                         )
@@ -59,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: TextField(
                     controller: _weigthController,
                     style: TextStyle(
-                      fontSize: 42,
+                      fontSize: 40,
                       fontWeight: FontWeight.w300,
                       color: accentHexColor
                       ),
@@ -67,6 +73,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: 'Weight',
+                        labelText: "Weight \(Kg\)",
+                        labelStyle: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.white.withOpacity(.8)
+                        ),
                         hintStyle: TextStyle(
                           fontSize: 42,
                           fontWeight: FontWeight.w300,
@@ -99,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             SizedBox(height:50),
             Container(
-              child: Text(_bmiResult.toStringAsFixed(2),style: TextStyle(fontSize: 90,fontWeight: FontWeight.w300,color: accentHexColor,)),
+              child: Text(_bmiResult.toStringAsFixed(2) + 'kg/m^2',style: TextStyle(fontSize: 50,fontWeight: FontWeight.w300,color: accentHexColor,)),
             ),
             SizedBox(height:30),
             Visibility(
