@@ -46,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: 'Height',
-                        labelText:'Height (mm)',
+                        labelText:'Height (m)',
                         labelStyle: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w300,
